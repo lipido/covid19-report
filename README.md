@@ -36,6 +36,13 @@ If you want to see the same data for a specific country:
 covid19_stacked_chart("Spain")
 ```
 
+To see the daily new events type distribution, you can use the `covid19_stacked_bar_chart`:
+
+```R
+covid19_stacked_bar_chart("Spain")
+```
+
+
 The list of different countries can be found in the CSV data files.
 
 
