@@ -31,5 +31,5 @@ covid19_stacked_chart <- function(country="worldwide") {
   group <- rep(c("recovered","deaths", "active"), each=length(confirmed))
   group <- factor(group, levels=c("recovered","deaths", "active"))
   data <- data.frame(time, value, group)
-  ggplot(data, aes(x=time, y=value, fill=group)) + geom_area() + ggtitle(paste("covid19 evolution in ", country)) + theme(legend.position="bottom")
+  ggplot(data, aes(x=time, y=value, fill=group)) + geom_area() + ggtitle(paste("COVID19 evolution in ", country)) + theme(legend.position="bottom") + scale_fill_manual(values=c("#4DF068", "#FF5B52", "#FFCD57")) 
 }
