@@ -45,10 +45,10 @@ covid19_stacked_bar_chart <- function(country="worldwide") {
     percentages["recovered",date] <- data["recovered",date] / sums[date]
     percentages["deaths",date] <- data["deaths",date] / sums[date]
     percentages["confirmed",date] <- data["confirmed",date] / sums[date]
-    }
-    
+    }    
   }
-  barplot(percentages, col=coul , border="white", xlab="group", legend=rownames(percentages), args.legend = list(x="topleft"))
+  
+  barplot(percentages, border="white", xlab="group", legend=rownames(percentages), args.legend = list(x="topleft"))
 }
 
 covid19_stacked_chart <- function(country="worldwide") {  
